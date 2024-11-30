@@ -20,12 +20,7 @@ def printMenu():
     enterCustomerInfo()
     return 
 
-'''
-    This function is to be edited to achieve the task.
-    It is your decision to make this function a procedural or functional type
-    You may place as many or as few parameters as needed
-    This function may also be broken down further depending on your algorithm/approach
-'''
+
 def enterCustomerInfo():
     print('Welcome to our system')
     print('We will be asking for your personal details and save them into a csv file')
@@ -85,12 +80,7 @@ def enterCustomerInfo():
             time.sleep(1)
     return
             
-'''
-    This function is to be edited to achieve the task.
-    It is your decision to make this function a procedural or functional type
-    You may place as many or as few parameters as needed         
-    This function may also be broken down further depending on your algorithm/approach
-'''
+
 def validatePostalCode(postal_code):
     code = postal_code
     with open('postal_codes.csv', 'r', newline = '', encoding = 'ISO-8859-1') as file:
@@ -103,12 +93,7 @@ def validatePostalCode(postal_code):
         else:
             return False
         
-'''
-    This function is to be edited to achieve the task.
-    It is your decision to make this function a procedural or functional type
-    You may place as many or as few parameters as needed
-    This function may also be broken down further depending on your algorithm/approach
-'''
+
 def validateCreditCard(card_number):
     card = card_number
     reversed_digits = card[::-1]
@@ -125,12 +110,7 @@ def validateCreditCard(card_number):
     else:
         return False
        
-'''
-    This function is to be edited to achieve the task.
-    It is your decision to make this function a procedural or functional type
-    You may place as many or as few parameters as needed
-    This function may also be broken down further depending on your algorithm/approach
-'''
+
 def generateCustomerDataFile(first_name, last_name, city, postal_code, card_number):
     with open('solutions.csv', 'r', newline = '', encoding = 'UTF-8') as file:
         read = csv.reader(file, delimiter = '|')
